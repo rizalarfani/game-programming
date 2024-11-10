@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GalaxyWars"
+config/tags=PackedStringArray("udinus")
+run/main_scene="res://source/Main Menu/Main Menu.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+HS="*res://source/Main Menu/HighScore.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=1
+window/size/always_on_top=true
+window/stretch/mode="viewport"
+
+[global_group]
+
+player=""
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

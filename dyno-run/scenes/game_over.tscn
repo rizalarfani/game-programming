@@ -1,0 +1,115 @@
+[gd_scene load_steps=6 format=3 uid="uid://j81j1vccl2xl"]
+
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_owyjx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ir6f"]
+bg_color = Color(0, 0.603922, 0.552941, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0, 0.313538, 0.311121, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q2ppg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0cyof"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig2cn"]
+
+[node name="game_over" type="CanvasLayer"]
+
+[node name="gameOverPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.5
+offset_top = -167.0
+offset_right = 205.5
+offset_bottom = 167.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0ir6f")
+
+[node name="Button" type="Button" parent="gameOverPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = 84.0
+offset_right = 122.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_owyjx")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/disabled = SubResource("StyleBoxFlat_q2ppg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0cyof")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ig2cn")
+text = "RESTART"
+
+[node name="PrevScoreLabel" type="Label" parent="gameOverPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.762
+anchor_top = 0.5
+anchor_right = 0.762
+anchor_bottom = 0.5
+offset_left = -235.682
+offset_top = -92.0
+offset_right = -102.682
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_owyjx")
+theme_override_font_sizes/font_size = 28
+text = "SCORE:"
+
+[node name="PrevBirdScoreLabel" type="Label" parent="gameOverPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -60.0
+offset_right = 70.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_owyjx")
+theme_override_font_sizes/font_size = 26
+text = "BIRD SCORE:"
+
+[node name="EndScoreLabel" type="Label" parent="gameOverPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -12.0
+offset_right = 88.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_owyjx")
+theme_override_font_sizes/font_size = 26
+text = "TOTAL SCORE:"
+
+[node name="Panel" type="Panel" parent="gameOverPanel"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 139.0
+offset_right = 302.0
+offset_bottom = 145.0

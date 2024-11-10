@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_akuqs"]
 size = Vector2(26, 26)
 
-[sub_resource type="Animation" id="Animation_bndr6"]
-resource_name = "idle"
+[sub_resource type="Animation" id="Animation_e0fah"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -21,8 +21,8 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_e0fah"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_bndr6"]
+resource_name = "idle"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -62,7 +62,7 @@ _data = {
 }
 
 [node name="Tank" type="CharacterBody2D"]
-position = Vector2(48, 43)
+position = Vector2(15, 14)
 
 [node name="BodySprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_nkt7s")
